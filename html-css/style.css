@@ -14,20 +14,19 @@ body {
 
 }
 
+/*
+*fr boslugu doldurmak gibi bisi
+*grid kullanma sebebimiz mobilde sıkıntı olmaması
+*/
 .or {
-  text-align: center;
-  display: flex;
-  gap: 20px;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   color: rgb(0, 0, 0, .5);
+  align-items: center;
+  gap: 20px;
+  --color:red;
 
 }
-
-/*
-*before after kullanmak için contenti doldumak lazım
-*geresksiz tag önlemek için before after kullanıyoruz
-*or içinde paddingi gap flex ile gelen özellik fakat mobilde sıkıntılıdır
-*/
 
 .or::before,
 .or::after {
@@ -35,4 +34,8 @@ body {
   height: 1px;
   flex: 1;
   background-color: rgb(0, 0, 0, .1);
+  background-image: linear-gradient(var(--position,to right), transparent,var(--color, rgb(0, 0, 0, .1)) );
+}
+.or::after{
+  --position:to left;
 }
