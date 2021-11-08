@@ -12,13 +12,16 @@ body {
   padding: 100px;
 }
 
+/*font size artınca şekil bozulur ve top özelliği işlevini yitirir*/
 .or {
   text-align: center;
   border-bottom: 1px solid #ccc;
+  font-size: 20px;
 }
 .or span {
-  position: relative;
-  top: 9px;
+  /*bu transform ilemlerinde display, translateY(50%): yukarıdan tam oratlar*/
+  display: inline-block;
+ transform:translateY(50%);
   background-color: #fff;
   padding: 0 15px;
   color: #999;
