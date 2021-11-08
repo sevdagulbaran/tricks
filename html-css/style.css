@@ -10,19 +10,22 @@
 }
 body {
   padding: 100px;
+  background-color: rgb(175, 113, 21);
 }
 
-/*font size artınca şekil bozulur ve top özelliği işlevini yitirir*/
 .or {
   text-align: center;
-  border-bottom: 1px solid #ccc;
-  font-size: 20px;
+  display: flex;
+  align-items: center;
 }
-.or span {
-  /*bu transform ilemlerinde display, translateY(50%): yukarıdan tam oratlar*/
-  display: inline-block;
- transform:translateY(50%);
-  background-color: #fff;
-  padding: 0 15px;
-  color: #999;
+.or .text {
+  padding: 0 20px;
+  color: rgb(0, 0,0,.5);
+
+}
+
+.or .border{
+  height: 1px;
+  flex: 1;
+  background: rgb(0, 0,0,.1);
 }
