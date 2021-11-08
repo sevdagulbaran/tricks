@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  font-family: 'Arial', sans-serif;
+}
+body {
+  padding: 100px;
+}
+
+.or {
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+.or span {
+  position: relative;
+  top: 9px;
+  background-color: #fff;
+  padding: 0 15px;
+  color: #999;
+}
